@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./rock-paper-scissors1.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Smooch+Sans&display=swap" rel="stylesheet">
+
+    <title>Ania Kubow: Rock Paper Scissors</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/90e639edc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="ukrajinsky">Камінь ножиці папір</h1>
+    <h2 class="slovensky">Kameň nožnice papier</h2>
+    <div class="game">
+        
+        <div class="choices text-center">
+            <div>
+                <p class="ukrajinsky fs-uk margin-btm-small">Твій вибір</p>
+                <p class="slovensky fs-sk">Tvoja voľba</p>
+                <p class="entries ukrajinsky uppercase fs-uk margin-btm-small" id="user-choiceUK"></p>
+                <p class="entries slovensky uppercase fs-sk margin-btm-small" id="user-choice"></p>
+                
+            </div>
+            <div>
+                <p class="ukrajinsky fs-uk margin-btm-small">Вибір комп'ютера</p>
+                <p class="slovensky fs-sk">Voľba počítača</p>
+                <p class="entries ukrajinsky uppercase fs-uk margin-btm-small" id="computer-choiceUK"></p>
+                <p class="entries slovensky uppercase fs-sk margin-btm-small" id="computer-choice"></p>
+            </div>
+        </div>
+        
+        <div class="results text-center">
+            <p class="resultUK ukrajinsky fs-uk margin-btm-small grid-items">Результат</p>
+            <p class="resultSK slovensky fs-sk margin-btm-small grid-items">Výsledok</p>
+            <p class="resultUK-message ukrajinsky uppercase fs-uk margin-btm-small grid-items" id="resultUK"></p>
+            <p class="resultSK-message slovensky uppercase fs-sk margin-btm-small grid-items" id="resultSK"></p>
+        </div>
+            
+        <div class="buttons">
+            <button id="kameň" class="slovensky uppercase"><span class="ukrajinsky uppercase">Камінь</span><br><i class="fas fa-hand-back-fist"></i><br>Kameň</button>
+            <button id="nožnice" class="slovensky uppercase"><span class="ukrajinsky uppercase">ножиці</span><br><i class="fa fa-hand-scissors"></i><br>Nožnice</button>
+            <button id="papier" class="slovensky uppercase"><span class="ukrajinsky uppercase">папір</span><br><i class="fas fa-hand"></i><br>Papier</button>
+        </div>
+        
+    </div>
+        
+        
+        
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
